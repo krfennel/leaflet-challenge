@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Earthquake Data - 1</title>
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+  
+  <!-- Our Leaflte -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+
+  <!-- Our CSS style -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body>
+
+  <!-- The div that holds the map -->
+  <div id="map"></div>
+   <!-- API key goes here-->
+   <div id='map' style='width: 400px; height: 300px;'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoia3JmZW5uZWwiLCJhIjoiY2tqenVtYms1MDZ5czJ2cWl5MjY2dWJoYiJ9.nh5zj2At1Axr2-6nihEJmw';
+var map = new mapboxgl.Map({
+container: 'map', // container ID
+style: 'mapbox://styles/mapbox/streets-v11', // style URL
+center: [-74.5, 40], // starting position [lng, lat]
+zoom: 9 // starting zoom
+});
+</script>
+
+   <script type="text/javascript" src="Homework/config.js"></script>
+
+  <!-- Leaflet JavaScript -->
+  <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+
+  <!-- Our JavaScript -->
+  <script type="text/javascript" src="Homework/json1.js"></script>
+
+</body>
+</html>
